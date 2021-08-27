@@ -1,15 +1,17 @@
 import datetime
 import os
 import json
-
-from utils.notion_api import create_page, create_database
-from templates.sport_calender_template import get_item_template, get_database_template
+import sys
 
 # path
 CRON_PATH = os.path.dirname(os.path.abspath(__file__))
 PROJECT_PATH = os.path.dirname(CRON_PATH)
 DATA_PATH = os.path.join(PROJECT_PATH, "data", "data.json")
 
+sys.path.append(PROJECT_PATH)
+
+from utils.notion_api import create_page, create_database
+from templates.sport_calender_template import get_item_template, get_database_template
 
 if __name__ == '__main__':
     # read data
