@@ -20,6 +20,18 @@ def get_database_template(title_text: str, parent_page_id: str):
             "👟你今天运动了吗": {
                 "checkbox": {}
             },
+            "yc早起否": {
+                "checkbox": {}
+            },
+            "yc早睡否": {
+                "checkbox": {}
+            },
+            "penny早起否": {
+                "checkbox": {}
+            },
+            "penny早睡否": {
+                "checkbox": {}
+            },
             "运动类型": {
                 "multi_select": {
                     "options": [
